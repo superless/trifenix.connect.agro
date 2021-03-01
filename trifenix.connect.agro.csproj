@@ -1,23 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Configurations>Debug;Release;CONNECT</Configurations>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CONNECT|AnyCPU'">
     <Optimize>false</Optimize>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Cosmonaut" Version="2.11.3" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0" />
-    <PackageReference Include="trifenix.connect.db.cosmos" Version="0.8.56" />
-    <PackageReference Include="trifenix.connect.mdm" Version="0.8.159" />    
-    <PackageReference Include="trifenix.exception" Version="0.1.32" />
+    <PackageReference Include="trifenix.connect.db.cosmos" Version="0.8.60" />
   </ItemGroup>
-
   <ItemGroup>
     <Compile Update="resources\dictionary\booleans\boolean_columns.Designer.cs">
       <DependentUpon>boolean_columns.resx</DependentUpon>
@@ -175,7 +169,6 @@
       <AutoGen>True</AutoGen>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Update="resources\dictionary\booleans\boolean_columns.resx">
       <LastGenOutput>boolean_columns.Designer.cs</LastGenOutput>
@@ -302,5 +295,4 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
   </ItemGroup>
-
 </Project>
