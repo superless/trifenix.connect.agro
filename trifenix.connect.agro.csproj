@@ -13,9 +13,7 @@
     <PackageReference Include="Cosmonaut" Version="2.11.3" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0" />
-    <PackageReference Include="trifenix.connect.db.cosmos" Version="0.8.56" />
-    <PackageReference Include="trifenix.connect.mdm" Version="0.8.159" />    
-    <PackageReference Include="trifenix.exception" Version="0.1.32" />
+    <PackageReference Include="trifenix.connect.db.cosmos" Version="0.8.60" />
   </ItemGroup>
 
   <ItemGroup>
