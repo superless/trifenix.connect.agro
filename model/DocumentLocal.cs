@@ -10,10 +10,11 @@ namespace trifenix.connect.agro_model
 {
 
 #if CONNECT
-     using trifenix.connect.model;
-    public abstract class DocumentLocal : DocumentDb
+    public abstract class DocumentLocal
     {
-       
+        public abstract string Id { get; set; }
+
+        public abstract string ClientId { get; set; }
     }
 #else
     using Cosmonaut;
