@@ -17,7 +17,8 @@ namespace trifenix.connect.agro_model
     }
 #else
     using Cosmonaut;
-    using trifenix.connect.entities.cosmos;
+    using trifenix.connect.db.model;
+
     public abstract class DocumentLocal : DocumentBase, ISharedCosmosEntity
     {
        
