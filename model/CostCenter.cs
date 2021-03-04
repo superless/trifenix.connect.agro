@@ -13,7 +13,7 @@ namespace trifenix.connect.agro_model
     /// todos los procesos, la bodega y los cuarteles dependen de un centro de costo.
     /// </summary>
     [SharedCosmosCollection("agro", "CostCenter")]
-    [ReferenceSearchHeader(EntityRelated.COSTCENTER, PathName = "cost-centers", Kind = EntityKind.ENTITY)]
+    [ReferenceSearchHeader(EntityRelated.COSTCENTER, PathName = "cost_centers", Kind = EntityKind.ENTITY)]
     [GroupMenu(MenuEntityRelated.MANTENEDORES, PhisicalDevice.ALL, SubMenuEntityRelated.GESTION)]
     public class CostCenter : DocumentLocal {
 

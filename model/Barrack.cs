@@ -105,7 +105,7 @@ namespace trifenix.connect.agro_model
         /// Temporada a la que pertenece el cuartel.
         /// </summary>
         [Group(3, PhisicalDevice.WEB, 6)]
-        [ReferenceSearch(EntityRelated.SEASON)]
+        [ReferenceSearch(EntityRelated.SEASON, visible : false)]
         public string IdSeason { get; set; }
 
 
