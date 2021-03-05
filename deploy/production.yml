@@ -14,6 +14,11 @@ variables:
   branch: "master"
   user: trifenix
   email: devops@trifenix.io
+  namespace-model: trifenix.connect.agro_model
+  input-model: trifenix.connect.agro_model_input
+  documentation-model: trifenix.connect.agro.resources
+  index-model: trifenix.connect.agro.index_model.props
+  
 
   
 # github ejecuta este build, para validar y ejecutar,
@@ -57,6 +62,20 @@ steps:
       script: |
         dotnet pack $(name-project).csproj --configuration $(BuildConfiguration) /p:Version=$(version) --output $(Build.ArtifactStagingDirectory)
     displayName: dotnet pack
+  
+  - task: CmdLine@2
+    inputs:
+      script: |
+        dotnet build $(name-project).csproj --configuration CONNECT -v diag
+    displayName: build Connect
+  
+  - task: CmdLine@2
+    inputs:
+      script: |
+        dotnet tool install mdm-cli -g
+        mdm-cli data $(agro-data) -m $(namespace-model) -i $(input-model) -d $(documentation-model) -u $(user) -e $(email) -b $(branch) -n $(index-model) -t $(script-token) -f $(name-project) -v $(version) -s $(scripts)
+
+    displayName: install and execute mdm-cli
     
 
   - task: PublishBuildArtifacts@1
