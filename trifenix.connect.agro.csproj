@@ -9,7 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0" />
-    <PackageReference Include="trifenix.connect.db.cosmos" Version="0.8.60" />
+    <PackageReference Include="trifenix.connect.db.cosmos" Version="0.8.62" />    
   </ItemGroup>
   <ItemGroup>
     <Compile Update="resources\dictionary\booleans\boolean_columns.Designer.cs">
