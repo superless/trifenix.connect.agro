@@ -9,7 +9,7 @@ namespace trifenix.connect.agro_model
     //Entidad encargada de generar las parcelas
     [SharedCosmosCollection("agro", "PlotLand")]
     [ReferenceSearchHeader(EntityRelated.PLOTLAND, PathName = "plotlands",Kind = EntityKind.ENTITY)]
-    [GroupMenu(MenuEntityRelated.MANTENEDORES, PhisicalDevice.ALL, SubMenuEntityRelated.TERRENO)]
+    [GroupMenu("Principales", PhisicalDevice.ALL, "Ubicación")]
     public class PlotLand : DocumentLocal
     {
         /// <summary>

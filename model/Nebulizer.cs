@@ -12,7 +12,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "Nebulizer")]
     [ReferenceSearchHeader(EntityRelated.NEBULIZER, PathName ="nebulizers", Kind = EntityKind.ENTITY)]
-    [GroupMenu(MenuEntityRelated.MANTENEDORES, PhisicalDevice.ALL, SubMenuEntityRelated.MAQUINARIA)]
+    [GroupMenu("Complementarios", PhisicalDevice.ALL, "Maquinaria")]
     public class Nebulizer : DocumentLocal {
 
         public override string Id { get; set; }

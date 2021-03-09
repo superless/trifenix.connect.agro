@@ -10,7 +10,8 @@ namespace trifenix.connect.agro_model
     /// Entidad certificadora, encargada de validar el proceso de exportación
     /// </summary>
     [SharedCosmosCollection("agro", "CertifiedEntity")]
-    [ReferenceSearchHeader(EntityRelated.CERTIFIED_ENTITY, PathName ="certified_entities", Kind = EntityKind.ENTITY)]    
+    [ReferenceSearchHeader(EntityRelated.CERTIFIED_ENTITY, PathName ="certified_entities", Kind = EntityKind.ENTITY)]
+    [GroupMenu("Configuración", PhisicalDevice.ALL, "Mercados")]
     public class CertifiedEntity : DocumentLocal {
 
         /// <summary>

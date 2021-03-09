@@ -14,6 +14,7 @@ namespace trifenix.connect.agro.model
     /// </summary>
     [SharedCosmosCollection("agro", "WarehouseDocument")]
     [ReferenceSearchHeader(EntityRelated.WAREHOUSEDOCUMENT, PathName = "WarehouseDocument", Kind = EntityKind.CUSTOM_ENTITY)]
+    [GroupMenu("Configuración", PhisicalDevice.ALL, "Bodegas")]
     public class WarehouseDocument : DocumentLocal
     {
 
@@ -67,15 +68,8 @@ namespace trifenix.connect.agro.model
         /// Dias para cosechar por entidad certificadora
         /// </summary>
         [ReferenceSearch(EntityRelated.PRODUCTDOCUMENT, true)]
-        public List<ProductDocument> ProductDocuments
-        {
-            get
-            {
-                _productsDocument = _productsDocument ?? new List<ProductDocument>();
-                return _productsDocument;
-            }
-            set { _productsDocument = value; }
-        }
+        public List<ProductDocument> ProductDocuments { get; set; } = new List<ProductDocument>();
+        
 
         /// <summary>
         /// Búsqueda por referencia de la bodega asociada

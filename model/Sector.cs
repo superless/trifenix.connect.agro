@@ -3,6 +3,7 @@ using trifenix.connect.agro.index_model.enums;
 using trifenix.connect.agro.index_model.props;
 using trifenix.connect.agro.mdm_attributes;
 using trifenix.connect.mdm.enums;
+using trifenix.connect.mdm.validation_attributes;
 using trifenix.connect.mdm_attributes;
 
 namespace trifenix.connect.agro_model
@@ -12,7 +13,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "Sector")]
     [ReferenceSearchHeader(EntityRelated.SECTOR, PathName = "sectors", Kind = EntityKind.ENTITY)]
-    [GroupMenu(MenuEntityRelated.MANTENEDORES, PhisicalDevice.ALL, SubMenuEntityRelated.TERRENO)]
+    [GroupMenu("Principales", PhisicalDevice.ALL, "Ubicación")]
     public class Sector : DocumentLocal
     {
         /// <summary>

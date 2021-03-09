@@ -12,6 +12,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "PreOrder")]
     [ReferenceSearchHeader(EntityRelated.PREORDER, PathName = "pre-orders", Kind = EntityKind.PROCESS)]
+    [GroupMenu("Principal", PhisicalDevice.ALL, "Procesos")]
     public class PreOrder : DocumentLocal
     {
         /// <summary>

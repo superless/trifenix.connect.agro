@@ -14,7 +14,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "BusinessName")]
     [ReferenceSearchHeader(EntityRelated.BUSINESSNAME, PathName = "business_names", Kind =EntityKind.ENTITY)]
-    [GroupMenu(MenuEntityRelated.MANTENEDORES, PhisicalDevice.ALL, SubMenuEntityRelated.GESTION)]
+    [GroupMenu("Configuración", PhisicalDevice.ALL, "Centro de Negocios")]
     public class BusinessName : DocumentLocal {
         
 
@@ -36,7 +36,6 @@ namespace trifenix.connect.agro_model
         /// Nombre de la razón social.
         /// </summary>
         [StringSearch(StringRelated.GENERIC_NAME)]
-        [Group(0,PhisicalDevice.WEB, 6)]
         [Required]
         public string Name { get; set; }
 
@@ -45,7 +44,6 @@ namespace trifenix.connect.agro_model
         /// Correo electrónico de la razón social.
         /// </summary>
         [StringSearch(StringRelated.GENERIC_EMAIL)]
-        [Group(0, PhisicalDevice.WEB, 6)]
         [Required]
         public string Email { get; set; }
 
@@ -54,7 +52,6 @@ namespace trifenix.connect.agro_model
         /// Rut de la razón social.
         /// </summary>
         [StringSearch(StringRelated.GENERIC_RUT)]
-        [Group(1, PhisicalDevice.WEB, 3)]
         [Required]
         public string Rut { get; set; }
 
@@ -62,7 +59,6 @@ namespace trifenix.connect.agro_model
         /// <summary>
         /// Página web de la razón social.
         /// </summary>
-        [Group(1, PhisicalDevice.WEB, 3)]
         [StringSearch(StringRelated.GENERIC_WEBPAGE)]
         public string WebPage { get; set; }
 
@@ -70,7 +66,6 @@ namespace trifenix.connect.agro_model
         /// <summary>
         /// Giro de la razón social.
         /// </summary>
-        [Group(1, PhisicalDevice.WEB, 3)]
         [StringSearch(StringRelated.GENERIC_GIRO)]
         public string Giro { get; set; }
 
@@ -78,7 +73,6 @@ namespace trifenix.connect.agro_model
         /// <summary>
         /// Teléfono
         /// </summary>
-        [Group(1, PhisicalDevice.WEB, 3)]
         [StringSearch(StringRelated.GENERIC_PHONE)]
         public string Phone { get; set; }
 

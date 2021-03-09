@@ -10,6 +10,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "OrderFolder")]
     [ReferenceSearchHeader(EntityRelated.ORDER_FOLDER, PathName = "order_folders", Kind = EntityKind.ENTITY)]
+    [GroupMenu("Principal", PhisicalDevice.ALL, "Procesos")]
     public class OrderFolder : DocumentLocal
     {
 

@@ -1,5 +1,6 @@
 ﻿using trifenix.connect.agro.index_model.props;
 using trifenix.connect.agro.mdm_attributes;
+using trifenix.connect.mdm.enums;
 
 namespace trifenix.connect.agro_model
 {
@@ -7,6 +8,7 @@ namespace trifenix.connect.agro_model
     /// Usuario aplicador, 
     /// a diferencia de un usuario este tiene asignado un tractor y una nebulizadora.
     /// </summary>
+    [GroupMenu("Configuración", PhisicalDevice.ALL, "Usuarios")]
     public class UserApplicator : User
     {
         /// <summary>

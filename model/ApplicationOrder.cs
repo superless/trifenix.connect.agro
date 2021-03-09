@@ -12,6 +12,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "ApplicationOrder")]
     [ReferenceSearchHeader(EntityRelated.ORDER, Kind = EntityKind.PROCESS, PathName = "orders")]
+    [GroupMenu("Principal", PhisicalDevice.ALL, "Procesos")]
     public class ApplicationOrder : DocumentLocal {
         /// <summary>
         /// Identificador de la entidad

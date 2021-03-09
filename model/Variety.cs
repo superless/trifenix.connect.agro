@@ -11,7 +11,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "Variety")]    
     [ReferenceSearchHeader(EntityRelated.VARIETY, Kind = EntityKind.ENTITY, PathName = "varieties")]
-    [GroupMenu(MenuEntityRelated.MANTENEDORES, PhisicalDevice.ALL, SubMenuEntityRelated.ESPECIES)]
+    [GroupMenu("Principales", PhisicalDevice.ALL, "Especies")]
     public class Variety : DocumentLocal
     {
         /// <summary>

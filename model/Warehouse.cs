@@ -12,6 +12,7 @@ namespace trifenix.connect.agro.model
     /// </summary>
     [SharedCosmosCollection("agro", "Warehouse")]
     [ReferenceSearchHeader(EntityRelated.WAREHOUSE, PathName = "warehouse", Kind = EntityKind.ENTITY)]
+    [GroupMenu("Configuración", PhisicalDevice.ALL, "Bodegas")]
     public class Warehouse : DocumentLocal
     {
         /// <summary>

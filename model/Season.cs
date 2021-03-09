@@ -12,6 +12,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "Season")]
     [ReferenceSearchHeader(EntityRelated.SEASON, PathName = "seasons", Kind = EntityKind.CUSTOM_ENTITY)]
+    [GroupMenu("Configuración", PhisicalDevice.ALL, "Temporada")]
     public class Season : DocumentLocal {
 
         /// <summary>

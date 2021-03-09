@@ -11,7 +11,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "Job")]
     [ReferenceSearchHeader(EntityRelated.JOB, PathName = "jobs", Kind = EntityKind.ENTITY)]
-    [GroupMenu(MenuEntityRelated.MANTENEDORES, PhisicalDevice.ALL, SubMenuEntityRelated.USUARIOS)]
+    [GroupMenu("Complementarios", PhisicalDevice.ALL, "Usuarios")]
     public class Job : DocumentLocal {
 
         /// <summary>

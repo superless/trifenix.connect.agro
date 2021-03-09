@@ -14,6 +14,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "ExecutionOrder")]
     [ReferenceSearchHeader(EntityRelated.EXECUTION_ORDER, Kind = EntityKind.PROCESS, PathName = "execution_orders")]
+    [GroupMenu("Principal", PhisicalDevice.ALL, "Procesos")]
     public class ExecutionOrder : DocumentLocal {
 
 

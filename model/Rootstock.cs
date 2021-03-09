@@ -11,6 +11,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "Rootstock")]
     [ReferenceSearchHeader(EntityRelated.ROOTSTOCK, PathName = "rootstock", Kind = EntityKind.ENTITY)]
+    [GroupMenu("Principales", PhisicalDevice.ALL, "Especies")]
     public class Rootstock : DocumentLocal {
 
 

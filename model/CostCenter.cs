@@ -14,7 +14,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "CostCenter")]
     [ReferenceSearchHeader(EntityRelated.COSTCENTER, PathName = "cost_centers", Kind = EntityKind.ENTITY)]
-    [GroupMenu(MenuEntityRelated.MANTENEDORES, PhisicalDevice.ALL, SubMenuEntityRelated.GESTION)]
+    [GroupMenu("Configuración", PhisicalDevice.ALL, "Centro de Negocios")]
     public class CostCenter : DocumentLocal {
 
 

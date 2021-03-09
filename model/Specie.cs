@@ -12,7 +12,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "Specie")]
     [ReferenceSearchHeader(EntityRelated.SPECIE, PathName = "species", Kind = EntityKind.ENTITY )]
-    [GroupMenu(MenuEntityRelated.MANTENEDORES, PhisicalDevice.ALL, SubMenuEntityRelated.ESPECIES)]
+    [GroupMenu("Principales", PhisicalDevice.ALL, "Especies")]
     public class Specie : DocumentLocal {
         public override string Id { get; set; }
 

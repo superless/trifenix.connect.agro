@@ -11,7 +11,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "IngredientCategory")]
     [ReferenceSearchHeader(EntityRelated.CATEGORY_INGREDIENT, PathName = "ingredient_categories", Kind = EntityKind.ENTITY)]
-    [GroupMenu(MenuEntityRelated.MANTENEDORES, PhisicalDevice.ALL, SubMenuEntityRelated.PRODUCTO)]
+    [GroupMenu("Complementarios", PhisicalDevice.ALL, "Productos")]
     public class IngredientCategory : DocumentLocal
     {
         /// <summary>

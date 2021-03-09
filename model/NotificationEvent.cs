@@ -14,6 +14,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "NotificationEvent")]
     [ReferenceSearchHeader(EntityRelated.NOTIFICATION_EVENT, PathName = "notification_events", Kind = EntityKind.CUSTOM_ENTITY)]
+
     public class NotificationEvent : ItemSinglesLocation
     {
 

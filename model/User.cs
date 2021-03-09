@@ -12,6 +12,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "User")]
     [ReferenceSearchHeader(EntityRelated.USER, PathName = "users", Kind = EntityKind.ENTITY)]
+   
     public class User : DocumentLocal
     {
 

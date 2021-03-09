@@ -12,6 +12,7 @@ namespace trifenix.connect.agro_model
     /// </summary>
     [SharedCosmosCollection("agro", "Product")]
     [ReferenceSearchHeader(EntityRelated.PRODUCT, Kind = EntityKind.CUSTOM_ENTITY, PathName = "products")]
+    [GroupMenu("Complementarios", PhisicalDevice.ALL, "Productos")]
     public class Product : DocumentLocal
     {
 
